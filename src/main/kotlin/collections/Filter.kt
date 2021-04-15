@@ -21,6 +21,8 @@ fun main() {
     val positives = nos.filter { it > 0}
     //x -> x>0 }
     println(positives)
+    println("${nos.count()} digits are there")
+    println("${nos.count { it % 2 ==0 }} even nos are there")
     val doubles = nos.map { x -> x*2 }
     println("doubles = $doubles")
     println("is any of the no is greater than 2"+nos.any { it > 2 })
